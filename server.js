@@ -17,6 +17,6 @@ app.get('/api/get_user_details',(req,res) => {
 });
 
 
-app.listen(process.env.PORT,() => {
-    console.log("listening to 8000");
-})
+app.listen(8000, '0.0.0.0', () => {
+  console.log('listening to 8000');
+});
