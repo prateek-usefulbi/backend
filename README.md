@@ -29,10 +29,21 @@ sudo apt-get install -y nginx
 Add commentMore actions
 Install Nginx to act as a reverse proxy for your Node.js application:
 
+<<<<<<< HEAD
 ```bash
 sudo apt install nodejs npm
 ```
 ### Step 5: Install PM2
+=======
+### Step 3.5: Install npm
+
+Install Nginx to act as a reverse proxy for your Node.js application:
+
+```bash
+sudo apt install nodejs npm
+```
+### Step 4: Install PM2
+>>>>>>> 66a3a4c0c524f0a51198f29202a08fd22021a729
 
 Install PM2 globally to manage your Node.js application:
 
