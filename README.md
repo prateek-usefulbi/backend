@@ -25,8 +25,14 @@ Install Nginx to act as a reverse proxy for your Node.js application:
 ```bash
 sudo apt-get install -y nginx
 ```
+### Step 4: Install npm
+Add commentMore actions
+Install Nginx to act as a reverse proxy for your Node.js application:
 
-### Step 4: Install PM2
+```bash
+sudo apt install nodejs npm
+```
+### Step 5: Install PM2
 
 Install PM2 globally to manage your Node.js application:
 
@@ -34,7 +40,7 @@ Install PM2 globally to manage your Node.js application:
 sudo npm i -g pm2
 ```
 
-### Step 5: Configure Nginx
+### Step 6: Configure Nginx
 
 Navigate to the Nginx sites-available directory and open the default configuration file for editing:
 
@@ -55,7 +61,7 @@ location /api {
 }
 ```
 
-### Step 6: Restart Nginx
+### Step 7: Restart Nginx
 
 After making changes to the Nginx configuration, restart Nginx to apply the changes:
 
@@ -63,7 +69,7 @@ After making changes to the Nginx configuration, restart Nginx to apply the chan
 sudo systemctl restart nginx
 ```
 
-### Step 7: Start Your Node.js Application with PM2
+### Step 8: Start Your Node.js Application with PM2
 
 Navigate to your project directory and start your Node.js application using PM2. Replace `server.js` with the actual filename of your Node.js application:
 
@@ -72,7 +78,7 @@ cd /path/to/your/app
 pm2 start server.js --name=Backend
 ```
 
-### Step 8: Restart Your Node.js Application with PM2 (Optional)
+### Step 9: Restart Your Node.js Application with PM2 (Optional)
 
 If you need to restart your Node.js application managed by PM2, you can use the following command:
 
